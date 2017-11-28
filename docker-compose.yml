@@ -2,7 +2,9 @@ version: "3"
 services:
 
   tvheadend:
-    build: .
+    build:
+      context: .
+      dockerfile: Dockerfile.build
     restart: unless-stopped
     volumes:
       - /srv/tvh/config:/config
