@@ -8,4 +8,4 @@ services:
       - /srv/tvh/config:/config
       - /srv/tvh/recordings:/recordings
     container_name: tvheadend
-    network-mode: "host"
+    network_mode: "host"
