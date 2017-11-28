@@ -7,5 +7,5 @@ services:
     volumes:
       - /srv/tvh/config:/config
       - /srv/tvh/recordings:/recordings
-    container-name: tvheadend
+    container_name: tvheadend
     network-mode: "host"
