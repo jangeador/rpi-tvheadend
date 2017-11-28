@@ -1,0 +1,12 @@
+version: "3"
+services:
+
+  tvheadend:
+    build: .
+    restart-policy:
+      condition: unless-stopped
+    volumes:
+      - /srv/tvh/config:/config
+      - /srv/tvh/recordings:/recordings
+    name: tvheadend
+    network-mode: "host"
